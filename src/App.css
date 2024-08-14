@@ -24,6 +24,22 @@
   color: white;
 }
 
+.product-card {
+  border: #282c34;
+  border-color: black;
+  border-style: solid;
+
+}
+
+.product-list {
+  flex: initial;
+  flex-wrap: wrap;
+}
+
+.main-body {
+  display: flex;
+}
+
 .App-link {
   color: #61dafb;
 }
