@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+
 import Body from './components/Body';
 import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 import Cart from './components/Cart';

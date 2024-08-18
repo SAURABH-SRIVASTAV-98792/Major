@@ -1,20 +1,17 @@
-import ProductCard from "./ProductCard";
-import { products } from "./assets/products";
+import React from 'react'
+import ProductCard  from './ProductCard';
+import { products } from '../assets/products';
+
 const Body = () => {
-
-    return (
-<div className="main-body">
-    <div>
-        {
-    products.map((product) => {
-     return (
-        <div className="product-list"> <ProductCard {...product} /> </div>
-        )
-    })
-}
+  return (
+    <div className="flex flex-wrap pb-60 justify-center">
+      {products.map((product) => {
+                return (
+                 <ProductCard key={product.id} {...product} />
+                )
+            })}
     </div>
-</div>
-    )
-};
+  )
+}
 
-export default Body;
+export default Body
